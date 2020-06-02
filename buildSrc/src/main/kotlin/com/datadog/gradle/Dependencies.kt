@@ -15,7 +15,7 @@ object Dependencies {
         const val OkHttp = "3.12.6"
 
         // Android
-        const val AndroidToolsPlugin = "3.6.1"
+        const val AndroidToolsPlugin = "4.0.0"
         const val AndroidXAppCompat = "1.1.0"
         const val AndroidXCore = "1.2.0"
         const val AndroidXMultidex = "2.0.1"
