@@ -40,6 +40,15 @@ internal class NetworkInfoAssert(actual: NetworkInfo) :
         return this
     }
 
+    fun hasCellularTechnology(expected: String?): NetworkInfoAssert {
+        assertThat(actual.cellularTechnology)
+            .overridingErrorMessage(
+                "Expected networkInfo to have cellularTechnology $expected but was ${actual.cellularTechnology}"
+            )
+            .isEqualTo(expected)
+        return this
+    }
+
     fun hasUpSpeed(expected: Int): NetworkInfoAssert {
         assertThat(actual.upKbps)
             .overridingErrorMessage(
